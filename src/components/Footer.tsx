@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Support from '../pages/Support'
 import Hosting from '../pages/Hosting'
 import Airbnb from '../pages/Airbnb'

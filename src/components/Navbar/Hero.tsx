@@ -14,7 +14,7 @@ import myimg12 from '../../assets/frame12.jpg';
 import myimg13 from '../../assets/frame13.jpg';
 import myimg14 from '../../assets/frame14.jpg';
 import myimg15 from '../../assets/frame15.jpg';
-import myimg16 from '../../assets/frame16.jpg';
+// import myimg16 from '../../assets/frame16.jpg';
 import myimg17 from '../../assets/frame17.jpg';
 import myimg18 from '../../assets/frame18.jpg';
 import myimg19 from '../../assets/frame19.jpg';
@@ -36,7 +36,7 @@ const myList = [
   { location: "Half Moon Bay, California, US", description: "Beach and ocean views", price: "£1,634 total", rating: 5.5, image: myimg13, date: "22–27 Oct · Individual Host" },
   { location: "Half Moon Bay, California, US", description: "Beach and ocean views", price: "£1,634 total", rating: 5.1, image: myimg14, date: "22–27 Oct · Individual Host" },
   { location: "Half Moon Bay, California, US", description: "Beach and ocean views", price: "£1,634 total", rating: 5.2, image: myimg15, date: "22–27 Oct · Individual Host" },
-  { location: "Half Moon Bay, California, US", description: "Beach and ocean views", price: "£1,634 total", rating: 5.9, image: myimg16, date: "22–27 Oct · Individual Host" },
+  { location: "Half Moon Bay, California, US", description: "Beach and ocean views", price: "£1,634 total", rating: 5.9,                 date: "22–27 Oct · Individual Host" },
   { location: "Half Moon Bay, California, US", description: "Beach and ocean views", price: "£1,634 total", rating: 5.7, image: myimg17, date: "22–27 Oct · Individual Host" },
   { location: "Half Moon Bay, California, US", description: "Beach and ocean views", price: "£1,634 total", rating: 5.6, image: myimg18, date: "22–27 Oct · Individual Host" },
   { location: "Half Moon Bay, California, US", description: "Beach and ocean views", price: "£1,634 total", rating: 5.4, image: myimg19, date: "22–27 Oct · Individual Host" },

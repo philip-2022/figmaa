@@ -18,7 +18,7 @@ import {
   Globe,
 } from "lucide-react";
 import log from '../../assets/Frame 1 (1).png';
-import backgroundImage from '../../assets/frame08.jpg'; // Replace with your image path
+import backgroundImage from '../../assets/frame08.jpg';
 
 function Navbar() {
   const categories = [
@@ -51,12 +51,12 @@ function Navbar() {
     >
     
       <nav className="flex justify-between items-center p-4 shadow-xl relative bg-white rounded-2xl mt-2">
-        {/* Logo */}
+        {/* 👇👇*/}
         <div className="text-red-500 font-bold text-xl flex">
           <img className="animate-pulse" src={log} alt="" />
         </div>
 
-        {/* Search Bar */}
+        {/* 👇👇*/}
         <div className="hidden md:flex items-center border border-red-400 rounded-full shadow-md px-4 py-2 space-x-2">
           <div className="text-gray-700 font-medium">Anywhere</div>
           <span className="text-gray-400">|</span>

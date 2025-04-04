@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import  { useState } from "react";
+import { Link, } from "react-router-dom";
 import {
-  // ArrowRight,
   Menu,
-  // X,
   Filter,
   ChevronRight,
   Mountain,
@@ -19,7 +17,8 @@ import {
   User,
   Globe,
 } from "lucide-react";
-import log from '../../assets/Frame 1 (1).png'
+import log from '../../assets/Frame 1 (1).png';
+import backgroundImage from '../../assets/frame08.jpg'; // Replace with your image path
 
 function Navbar() {
   const categories = [
@@ -43,16 +42,18 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const myLocation = useLocation();
+  // const  = useLocation();
 
   return (
-    <div>
-      {/* Navbar Section */}
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${backgroundImage})` }} // Apply background image
+    >
+    
       <nav className="flex justify-between items-center p-4 shadow-xl relative bg-white rounded-2xl mt-2">
         {/* Logo */}
         <div className="text-red-500 font-bold text-xl flex">
           <img className="animate-pulse" src={log} alt="" />
-          
         </div>
 
         {/* Search Bar */}
@@ -67,8 +68,8 @@ function Navbar() {
           </button>
         </div>
 
-        {/*👇👇*/}
-        <div className="flex items-center space-x-4 relative ">
+        {/* User Menu */}
+        <div className="flex items-center space-x-4 relative">
           <button className="hidden md:block text-gray-700">Airbnb your home</button>
           <button className="hidden md:block text-gray-700">
             <Globe />
@@ -81,7 +82,7 @@ function Navbar() {
             <User className="text-gray-500" size={20} />
           </div>
 
-          {/*👇👇*/}
+          {/* Dropdown Menu */}
           {isMenuOpen && (
             <div className="absolute right-0 w-48 bg-white shadow-lg shadow-fuchsia-400 rounded-lg py-2 z-10 mt-72">
               <Link
@@ -108,20 +109,16 @@ function Navbar() {
               >
                 Help Center
               </Link>
-              
               <button className="block w-full text-left px-4 py-2 hover:bg-gray-100">
                 Airbnb your home
               </button>
-              {/* <button className="block w-full text-left px-4 py-2 hover:bg-gray-100">
-                Help Center
-              </button> */}
             </div>
           )}
         </div>
       </nav>
 
-      {/*👇👇*/}
-      <div className="hidden md:flex items-center space-x-6 overflow-x-auto px-6 mt-6 border-b text-gray-700  shadow-2xl shadow-fuchsia-100 bg-white">
+      {/* Categories Section */}
+      <div className="hidden md:flex items-center space-x-6 overflow-x-auto px-6 mt-6 border-b text-gray-700 shadow-2xl shadow-fuchsia-100 bg-white">
         {categories.map((category, index) => (
           <div
             key={index}
